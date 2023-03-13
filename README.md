@@ -16,16 +16,16 @@ before you use these examples, you need to install Byzer Desktop. Please refer t
 conda create -n ray-2.3.0 python=3.10.9
 ```
 
-2. Install python packages
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Activate python environment
+2. Activate python environment
 
 ```bash
 conda activate ray-2.3.0
+```
+
+3. Install python packages
+
+```bash
+pip install -r requirements.txt
 ```
 
 
