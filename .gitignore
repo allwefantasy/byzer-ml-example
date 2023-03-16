@@ -1,2 +1,4 @@
 /logs
 /spark-warehouse
+/store
+/data/__instances__
