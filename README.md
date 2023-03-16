@@ -41,3 +41,7 @@ In this notebook, we will show youin Byzer how to:
 2. deploy the model as UDF 
 3. use the UDF in SQL
 
+### 2.3. visualize
+
+In this section, we will show you how to visualize the data in Byzer.
+
