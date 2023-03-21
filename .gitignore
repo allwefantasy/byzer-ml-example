@@ -2,3 +2,4 @@
 /spark-warehouse
 /store
 /data/__instances__
+*.tgz
