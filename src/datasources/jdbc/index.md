@@ -5,7 +5,7 @@ In this section, we will introduce how to use JDBC datasource in Byzer.
 Before you start, you need to download the JDBC driver for the database you want to access. For example, if you want to access Oracle database, you need to download the Oracle JDBC driver. Then put the driver jar file in the `$BYZER_HOME/plugin` directory if you run byzer in local mode or the `$SPARK_HOME/libs` directory if you run Byzer in yarn mode.
 
 
-Here is an example:
+Here is an MySQL example:
 
 ```sql
 -- build connection info for mysql
