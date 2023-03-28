@@ -1,0 +1,2 @@
+set echo="default value" where type="defaultParam";
+select "${echo}" as name as output;

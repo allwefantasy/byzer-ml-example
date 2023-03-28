@@ -24,7 +24,7 @@ as mysql_vega_datasets;
 
 Notice that Byzer load the data from database with JDBC protocal using only one thread by default. If you want to load the data from MySQL database using multiple threads, you can set the some parameters in the `load` statement.
 
-The parameters for JDBC datasource are:
+The parameters for parallel loading are:
 
 1. numPartitions
 2. partitionColumn 
@@ -46,6 +46,6 @@ as mysql_vega_datasets;
 
 In this example, we set the "numPartitions" option to 10, which will split the data into 10 partitions by the id column which is specified by `partitionColumn` and load them in parallel. You can adjust the value of "numPartitions" to increase or decrease the degree of parallelism based on your specific needs and the available resources in your environment.
 
-Note that the "partitionColumn" option must be a numeric column. If you want to use a non-numeric column as the partition column, you can use the `hash` function to convert it to a numeric column.
+Note that the `partitionColumn` option must be a numeric or timestamp column. 
 
 In order to ensure that the data is evenly distributed across partitions and to avoid issues with skewed data distribution, you also need to specify the lower and upper bounds of the partition column. The lower bound is the minimum value of the partition column, and the upper bound is the maximum value of the partition column. You can use the `min` and `max` functions to get the minimum and maximum values of the partition column.

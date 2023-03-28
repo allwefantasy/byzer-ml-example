@@ -3,3 +3,4 @@
 /store
 /data/__instances__
 *.tgz
+/__mlsql__
