@@ -29,19 +29,3 @@ pip install -r requirements.txt
 ```
 
 
-### 2.1. simple-ml.mlsqlnb
-
-In this example, we will use Byzer to train a simple machine learning model without any python language skill. We will use the [Iris dataset](https://archive.ics.uci.edu/ml/datasets/iris) to train a model to predict the species of an Iris flower based on its sepal and petal measurements. Once the model is trained, we will use register the mode as UDF so you can  predict the species of an Iris flower in SQL.
-
-### 2.2. sklearn.mlsqlnb
-
-In this notebook, we will show youin Byzer how to:
-
-1. train sklearn model  
-2. deploy the model as UDF 
-3. use the UDF in SQL
-
-### 2.3. visualize
-
-In this section, we will show you how to visualize the data in Byzer.
-
