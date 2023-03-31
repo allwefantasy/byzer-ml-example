@@ -49,3 +49,15 @@ In this example, we set the "numPartitions" option to 10, which will split the d
 Note that the `partitionColumn` option must be a numeric or timestamp column. 
 
 In order to ensure that the data is evenly distributed across partitions and to avoid issues with skewed data distribution, you also need to specify the lower and upper bounds of the partition column. The lower bound is the minimum value of the partition column, and the upper bound is the maximum value of the partition column. You can use the `min` and `max` functions to get the minimum and maximum values of the partition column.
+
+If the type of  `partitionColumn` is timestamp, you can try code like following:
+
+```
+load jdbc.`mysql_instance.vega_datasets` 
+where numPartitions="10"
+and partitionColumn="time"
+and lowerBound="2000-01-01 00:00:00"
+and upperBound="2023-01-01 00:00:00"
+and timestampFormat="yyyy-MM-dd HH:mm:ss"
+as mysql_vega_datasets;
+```
